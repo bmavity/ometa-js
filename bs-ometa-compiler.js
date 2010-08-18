@@ -1,3 +1,4 @@
+var StringBuffer = StringBuffer || require('./lib').StringBuffer;
 {BSOMetaParser=objectThatDelegatesTo(Parser,{
 "fromTo":function(){var $elf=this,_fromIdx=this.input.idx,x,y;return (function(){x=this._apply("anything");y=this._apply("anything");this._applyWithArgs("seq",x);this._many((function(){return (function(){this._not((function(){return this._applyWithArgs("seq",y)}));return this._apply("char")}).call(this)}));return this._applyWithArgs("seq",y)}).call(this)},
 "space":function(){var $elf=this,_fromIdx=this.input.idx;return this._or((function(){return Parser._superApplyWithArgs(this,'space')}),(function(){return this._applyWithArgs("fromTo","//","\n")}),(function(){return this._applyWithArgs("fromTo","/*","*/")}))},

@@ -178,3 +178,4 @@ getTag = (function() {
   }
 })()
 
+module.exports.StringBuffer = StringBuffer;
