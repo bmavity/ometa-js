@@ -13,7 +13,10 @@ var translateCode = function(s) {
 }
 
 var parse = function(s) {
-  return eval(translateCode(s));
+  var parser = eval(translateCode(s));
+  return function(scssFile) {
+    return eval(parser.matchAll(scssFile, 'scssFile'));
+  };
 };
 
 
