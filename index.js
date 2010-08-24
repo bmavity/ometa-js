@@ -1,4 +1,4 @@
-var ometa = require('../ometa-js/ometa-node'); 
+var ometa = require('./ometa-node'); 
 
 var createParser = function(grammar, parserCallback) {
   var parser;
