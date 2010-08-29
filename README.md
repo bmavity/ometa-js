@@ -37,7 +37,7 @@ Alex
 
 ## MIT and Modified MIT License
 
-Copyright (c) 2010 Brian Mavity <brian@brianmavity.com>
+Copyright (c) 2010 Brian Mavity 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
