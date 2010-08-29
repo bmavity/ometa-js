@@ -1,10 +1,10 @@
 {
-  "name": "ometa",
-  "description": "JavaScript Implementation of OMeta",
-  "version": "0.1.0",
-  "contributors": [ 
+  "name": "ometa"
+, "contributors": [ 
     { "name": "Brian Mavity", "email": "brian@brianmavity.com" }
-  ],
-  "main": "./index.js",
-  "engines": { "node": ">= 0.2.0" }
+  ]
+, "description": "JavaScript Implementation of OMeta"
+, "engines": { "node": ">= 0.2.0" }
+, "main": "./index.js"
+, "version": "0.1.0"
 }
