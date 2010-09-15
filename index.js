@@ -5,8 +5,8 @@ var createParser = function(grammar, parserCallback) {
   try {
     parser = ometa(grammar);
     parserCallback(null, {
-      parse: function(code, callback) {
-        callback(null, parser(code));
+      parse: function(code, rule, callback) {
+        callback(null, parser(code, rule));
       }
     });
   }

@@ -12,10 +12,10 @@ var translateCode = function(s) {
   return BSOMetaJSTranslator.match(tree, "trans", undefined, translationError)
 }
 
-var parse = function(s) {
-  var parser = eval(translateCode(s));
-  return function(scssFile) {
-    return eval(parser.matchAll(scssFile, 'scssFile'));
+var parse = function(grammarString) {
+  var parser = eval(translateCode(grammarString));
+  return function(stringToParse, rule) {
+    return eval(parser.matchAll(stringToParse, rule));
   };
 };
 
