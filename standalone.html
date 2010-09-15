@@ -11,8 +11,10 @@
     <script src="ometa-script-tag.js"></script>
 
     <script type="text/x-ometa-js">
-      ometa M { ones = 1* }
-      alert(M.matchAll([1, 1, 1, 1, 1], "ones"))
+      ometa M <: Parser { ones = digit* }
+      console.log(M.matchAll("1", "ones"))
+      console.log(M.matchAll("0", "ones"))
+      console.log(M.matchAll("111", "ones"))
     </script>
 
   <body>
