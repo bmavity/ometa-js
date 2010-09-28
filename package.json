@@ -6,5 +6,5 @@
 , "description": "JavaScript Implementation of OMeta Parsing Language"
 , "engines": { "node": ">= 0.2.0" }
 , "main": "./index.js"
-, "version": "0.2.0"
+, "version": "0.2.1"
 }

@@ -373,6 +373,7 @@ OMeta = {
     var g   = this._apply("anything"),
         r   = this._apply("anything"),
         gi  = objectThatDelegatesTo(g, {input: makeOMInputStreamProxy(this.input)})
+        gi.initialize();
     var ans = gi._apply(r)
     this.input = gi.input.target
     return ans

@@ -1,0 +1,3 @@
+ometa T <: Parser {
+  t = '\n' 
+}
