@@ -1,4 +1,4 @@
-/*
+﻿/*
   Copyright (c) 2007-2010 Alessandro Warth <awarth@cs.ucla.edu>
 
   Permission is hereby granted, free of charge, to any person

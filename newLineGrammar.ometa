@@ -1,3 +1,4 @@
-ometa T <: Parser {
-  t = '\n' 
+﻿ometa T <: Parser {
+  t = '\n' -> '\n',
+  selectors_group = (t | anything)*
 }
